@@ -1,0 +1,37 @@
+/* The grid: Four equal columns that floats next to each other */
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+  width: 90%;
+  align-items: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container-image {
+  position: relative;
+  display: none;
+}
+
+

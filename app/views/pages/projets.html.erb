@@ -1,0 +1,42 @@
+<div class="container">
+
+  <h1>Projets</h1>
+  <br>
+
+  <%= render 'shared/animated-image' %>
+
+  <div class="row columns">
+    <div class="column">
+      <%= image_tag "noa1.png", class:"d-block photos-carousel", alt:"Plat", id:"first-expanded-image", onclick:"myFunction(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "noa2.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "noa3.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "noa4.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+
+  var firstExpand = document.getElementById("first-expanded-image");
+  myFunction(firstExpand);
+
+</script>
