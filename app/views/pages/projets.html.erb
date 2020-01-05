@@ -3,29 +3,52 @@
   <h1>Projets</h1>
   <br>
 
-  <%= render 'shared/animated-image' %>
+  <%= render 'shared/noa-animated-image' %>
 
   <div class="row columns">
     <div class="column">
-      <%= image_tag "noa1.png", class:"d-block photos-carousel", alt:"Plat", id:"first-expanded-image", onclick:"myFunction(this);" %>
+      <%= image_tag "noa1.png", class:"d-block photos-carousel", alt:"Plat", id:"noa-first-expanded-image", onclick:"noaFunctionDisplay(this);" %>
     </div>
     <div class="column">
-      <%= image_tag "noa2.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+      <%= image_tag "noa2.png", class:"d-block photos-carousel", alt:"Plat", onclick:"noaFunctionDisplay(this);" %>
     </div>
     <div class="column">
-      <%= image_tag "noa3.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+      <%= image_tag "noa3.png", class:"d-block photos-carousel", alt:"Plat", onclick:"noaFunctionDisplay(this);" %>
     </div>
     <div class="column">
-      <%= image_tag "noa4.png", class:"d-block photos-carousel", alt:"Plat", onclick:"myFunction(this);" %>
+      <%= image_tag "noa4.png", class:"d-block photos-carousel", alt:"Plat", onclick:"noaFunctionDisplay(this);" %>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <%= render 'shared/hplace-animated-image' %>
+
+  <div class="row columns">
+    <div class="column">
+      <%= image_tag "hplace1.png", class:"d-block photos-carousel", alt:"Plat", id:"hplace-first-expanded-image", onclick:"hplaceFunctionDisplay(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "hplace2.png", class:"d-block photos-carousel", alt:"Plat", onclick:"hplaceFunctionDisplay(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "hplace3.png", class:"d-block photos-carousel", alt:"Plat", onclick:"hplaceFunctionDisplay(this);" %>
+    </div>
+    <div class="column">
+      <%= image_tag "hplace4.png", class:"d-block photos-carousel", alt:"Plat", onclick:"hplaceFunctionDisplay(this);" %>
     </div>
   </div>
 </div>
 
 
+
 <script>
-  function myFunction(imgs) {
+  function noaFunctionDisplay(imgs) {
     // Get the expanded image
-    var expandImg = document.getElementById("expandedImg");
+    var expandImg = document.getElementById("noa-expanded-img");
     // Get the image text
     var imgText = document.getElementById("imgtext");
     // Use the same src in the expanded image as the image being clicked on from the grid
@@ -36,7 +59,23 @@
     expandImg.parentElement.style.display = "block";
   }
 
-  var firstExpand = document.getElementById("first-expanded-image");
-  myFunction(firstExpand);
+  var noaFirstExpand = document.getElementById("noa-first-expanded-image");
+  noaFunctionDisplay(noaFirstExpand);
+
+  function hplaceFunctionDisplay(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("hplace-expanded-img");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+
+  var hplaceFirstExpand = document.getElementById("hplace-first-expanded-image");
+  hplaceFunctionDisplay(hplaceFirstExpand);
 
 </script>
