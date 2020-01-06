@@ -1,6 +1,7 @@
 const titleEffect = () => {
-  if (document.getElementById('text')) {
-    const text = document.getElementById('text').innerText;
+  if (document.getElementById('title')) {
+    const title = document.getElementById('title').innerText;
+    const subhead = document.getElementById('subhead').innerText;
 
     // this function turns a string into an array
     const createLetterArray = (string) => {
@@ -35,7 +36,8 @@ const titleEffect = () => {
 
     // use a promise to output text layers into DOM first
     const outputLayers = new Promise(function(resolve, reject) {
-          document.getElementById('text').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(text))).join('');
+          document.getElementById('title').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(title))).join('');
+          document.getElementById('subhead').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(subhead))).join('');
           resolve();
     });
 
@@ -52,7 +54,7 @@ const titleEffect = () => {
         // then slide letters into view one at a time
         let time = 250;
         return spans.map((span) => {
-          time += 75;
+          time += 25;
           setTimeout(() => {
             span.parentElement.style.top = '0px';
           }, time);
