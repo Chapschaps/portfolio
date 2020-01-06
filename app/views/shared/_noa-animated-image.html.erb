@@ -2,9 +2,6 @@
   <div class="container-image">
     <!-- Expanded image -->
     <img id="noa-expanded-img" style="width:100%">
-
-    <!-- Image text -->
-    <div id="imgtext"></div>
   </div>
   <figcaption>
     <h3>Noa</h3>
@@ -12,3 +9,18 @@
   </figcaption>
   <i class="fas fa-plus"><a href="https://noa321.herokuapp.com/" target="blank"></a></i>
 </figure>
+
+<div class="row columns">
+  <div class="column">
+    <%= image_tag "noa1.png", class:"d-block photos-carousel", alt:"Plat", id:"noa-first-expanded-image", onclick:"functionDisplay(this, 'noa-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "noa2.png", class:"d-block photos-carousel", alt:"Plat", onclick:"functionDisplay(this, 'noa-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "noa3.png", class:"d-block photos-carousel", alt:"Plat", onclick:"functionDisplay(this, 'noa-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "noa4.png", class:"d-block photos-carousel", alt:"Plat", onclick:"functionDisplay(this, 'noa-expanded-img');" %>
+  </div>
+</div>
