@@ -3,10 +3,40 @@
   justify-content: center;
   top: 2em;
   margin-bottom: 4em;
-  a {
+  .navbar-links {
     margin: 0 1em;
     color: $bordeaux;
     text-decoration: none;
     font-size: 1.2em;
+    text-decoration: none;
+    position: relative;
+    padding: 8px 0px;
+    vertical-align: middle;
+    letter-spacing: 0.025em;
+  }
+  .navbar-links.active:after {
+    opacity: .6;
+    transform: translateY(0);
+  }
+  .navbar-links:after {
+    content: "";
+    position: absolute;
+    bottom: 0; right: 0px; left: 0px;
+    height: 2px;
+    background-color: $bordeaux;
+    /* Préparation de notre animation */
+    opacity: 0;
+    transform: translateY(5px);
+    transition: all .4s;
+  }
+  /* Le trait va remonter et apparaitre */
+  .navbar-links:hover:after,
+  .navbar-links:focus:after {
+    opacity: .6;
+    transform: translateY(0);
+  }
+  /* Je vire outline car juste au-dessus je définis un style :focus */
+  .navbar-links:focus {
+    outline: none;
   }
 }

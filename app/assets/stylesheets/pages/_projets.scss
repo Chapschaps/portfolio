@@ -4,8 +4,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-bottom: 90px;
-  margin-left: 16px;
-  margin-right: 16px;
 }
 
 /* Style the images inside the grid */
@@ -47,4 +45,49 @@
 .project-name {
   text-align: center;
   margin-bottom: 1em;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .columns {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .columns {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .columns {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .columns {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .columns {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }

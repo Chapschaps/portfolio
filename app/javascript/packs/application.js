@@ -3,6 +3,8 @@ import "bootstrap";
 import { titleEffect } from "../components/title_effect";
 import { prettyUnderline } from "../components/pretty_underline";
 import { functionDisplay } from "../components/display_image";
+import { functionColorChange } from "../components/color_change";
+import { navbarUnderline } from "../components/navbar_underline";
 
 
 titleEffect();
@@ -12,3 +14,5 @@ document.getElementById("noa-first-expanded-image", functionDisplay(document.get
 
 window.functionDisplay = functionDisplay
 
+functionColorChange();
+navbarUnderline();

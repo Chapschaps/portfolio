@@ -4,7 +4,7 @@
   margin: 0px auto 10px;
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 70%;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -85,3 +85,39 @@
   -webkit-transform: translateX(0);
   transform: translateX(0);
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .image-effect {
+    width: 95%;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .image-effect {
+    width: 95%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .image-effect {
+    width: 95%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .image-effect {
+    width: 70%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .image-effect {
+    width: 70%;
+  }
+}
+

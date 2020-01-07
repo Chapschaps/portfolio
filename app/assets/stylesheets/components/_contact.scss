@@ -13,7 +13,11 @@
 #contact-mail {
   color: white;
   text-align: center;
-  margin-top: 30%
+  margin-top: 30%;
+  a {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 .contact-icon {
