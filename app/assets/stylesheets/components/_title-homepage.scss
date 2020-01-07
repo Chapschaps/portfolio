@@ -2,14 +2,15 @@ $primary_font: "Merriweather", "Helvetica", "sans-serif";
 $first_color: #c3c8d4;
 $second_color: #c06c84;
 
-#title, #subhead {
+#title, #subhead, #description {
   font-family: $primary_font;
-  font-size: 2em;
+  font-size: 1.2em;
   line-height: 1em;
   position: relative;
   top: 50vh;
   left: 15vw;
-  width: 100vw;
+  width: 70vw;
+  margin-right: 15vw;
   transform: translateY(-50%);
   &:hover {
     cursor: default;

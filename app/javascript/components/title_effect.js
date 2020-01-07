@@ -2,6 +2,7 @@ const titleEffect = () => {
   if (document.getElementById('title')) {
     const title = document.getElementById('title').innerText;
     const subhead = document.getElementById('subhead').innerText;
+    const description = document.getElementById('description').innerText;
 
     // this function turns a string into an array
     const createLetterArray = (string) => {
@@ -38,6 +39,8 @@ const titleEffect = () => {
     const outputLayers = new Promise(function(resolve, reject) {
           document.getElementById('title').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(title))).join('');
           document.getElementById('subhead').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(subhead))).join('');
+          document.getElementById('description').innerHTML = createLetterContainers(createLetterLayers(createLetterArray(description))).join('');
+
           resolve();
     });
 
