@@ -4,6 +4,8 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 16px;
   margin-bottom: 90px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 /* Style the images inside the grid */
@@ -36,4 +38,13 @@
   display: none;
 }
 
+#projet-title {
+  text-align: center;
+  color: $bordeaux;
+  margin-bottom: 2em;
+}
 
+.project-name {
+  text-align: center;
+  margin-bottom: 1em;
+}

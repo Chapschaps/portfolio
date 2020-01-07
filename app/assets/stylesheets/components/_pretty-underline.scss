@@ -1,25 +1,12 @@
-.heading {
-  font-size: 10vw;
-}
-
 .subheading {
   font-size: 1em;
   line-height: 1.5;
 }
 
 @media screen and (min-width: 40em) {
-  .heading {
-    font-size: 6vw;
-  }
-
   .subheading {
     font-size: 1.75vw;
   }
-}
-
-.about {
-  width: 50%;
-  left: 1em;
 }
 
 /*================================================
@@ -27,7 +14,7 @@ Start Important Part
 ==================================================*/
 
 .underline--magical {
-  background-image: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(192,108,132,1) 54%, rgba(192,108,132,1) 100%);
+  background-image: linear-gradient(to right, rgb(250, 112, 154) 0%, rgb(254, 225, 64) 100%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 88%;

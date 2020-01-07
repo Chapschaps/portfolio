@@ -1,6 +1,6 @@
 $primary_font: "Merriweather", "Helvetica", "sans-serif";
-$first_color: rgba(192, 108, 132, 0.5);
-$second_color: rgba(0, 108, 132, 0.5);
+$first_color: #c3c8d4;
+$second_color: #c06c84;
 
 #title, #subhead {
   font-family: $primary_font;
@@ -9,6 +9,7 @@ $second_color: rgba(0, 108, 132, 0.5);
   position: relative;
   top: 50vh;
   left: 15vw;
+  width: 100vw;
   transform: translateY(-50%);
   &:hover {
     cursor: default;

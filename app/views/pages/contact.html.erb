@@ -1,5 +1,92 @@
-<h1>Contact</h1>
-<div class="about">
-  <h1 class="heading">Look At This <span class="underline--magical">Pretty</span> Underline</h1>
-  <h2 class="subheading">Wow this one  is super incredibly cool, and this <span class="underline--magical">one is on Multiple Lines!</span> I wish I had found this like thirty projects ago when I was representing the lollipop guild.</h2>
+<div class="container">
+  <div class="about-content">
+    <div class="about">
+      <h1>Pour un accompagnement de votre site web <span class="underline--magical">de la conception à la production</span></h1>
+      <h3 class="subheading">À travers la conception, le design, la conception puis la production de votre site web, tout est fait pour que <span class="underline--magical">celui-ci soit une réussite</span></h2>
+    </div>
+    <div class="competences">
+      <h2 class="title-skills">Compétences</h2>
+      <div class="all-skills">
+        <div class="logo-title">
+          <i id="skill-ico" class="fas fa-code"></i>
+          <p>Ruby on Rails & Ruby</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-js-square"></i>
+          <p>Javascript ES2015</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-html5"></i>
+          <p>HTML</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-css3-alt"></i>
+          <p>CSS</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fas fa-database"></i>
+          <p>PostgreSQL, SQL</p>
+        </div>
+        <div class="logo-title">
+          <%= image_tag "bootstrap.png", id:"skill-ico", style:"height:30px;width:30px;" %>
+          <p>Bootstrap</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-react"></i>
+          <p>React</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-github-square"></i>
+          <p>Git & Github</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fas fa-file-excel"></i>
+          <p>VBA</p>
+        </div>
+        <div class="logo-title">
+          <i id="skill-ico" class="fab fa-python"></i>
+          <p>Python</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<div id="contact-content">
+  <div class="container">
+    <h2 id="contact-title" class="color-change">Contact</h2>
+    <h2 id="contact-mail" class="color-change">bonjour@leochaput.fr</h2>
+    <i class="fab fa-linkedin contact-icon color-change"></i>
+    <i class="far fa-envelope contact-icon color-change"></i>
+  </div>
+</div>
+
+
+<script>
+  // Create a HTML div Element called 'page'
+
+var page = document.getElementById('contact-content');
+//Creates variables for x & y for know where our mouse is
+//x is for horizontal values, and y for vertical ones
+var x = 0;
+var y = 0;
+
+
+// Add Event Listener for page. Listens for any mouse movement
+// inside the page element. If found, run function below
+page.addEventListener('mousemove', function(event) {
+  //Takes the mouse movement we listened for and saves it into two variables
+  x = event.clientX;
+  y = event.clientY;
+  rgb = [
+          Math.round(x/page.clientWidth * 255),
+          Math.round(y/page.clientHeight * 255),
+          150
+      ];
+  var titles = document.querySelector('.color-change');
+  //Here we set the background color to the x & y value that the mouse has over the web page. See css part for rgb explaination
+  titles.style.color = 'rgb('+rgb.join(',')+')';
+  //By writing variable + ', ' we combine the value with text to make it write like rgb(x, y, 100); when sent to style part (css)
+  //Adds a text element to the page. It writes out the x & y value
+});
+
+</script>

@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   top: 2em;
+  margin-bottom: 4em;
   a {
     margin: 0 1em;
-    color: #c06c84;
+    color: $bordeaux;
     text-decoration: none;
     font-size: 1.2em;
   }

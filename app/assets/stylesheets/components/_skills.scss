@@ -1,0 +1,27 @@
+.competences {
+  margin-left: 30vw;
+  text-align: center;
+}
+
+.title-skills{
+  margin-top:6vh;
+  margin-bottom:6vh;
+  text-align: center;
+}
+
+#skill-ico {
+  font-size:30px;
+  margin-left:2vw;
+  margin-right:2vw;
+}
+
+.all-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+}
