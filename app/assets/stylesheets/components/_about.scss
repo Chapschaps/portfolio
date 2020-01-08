@@ -1,11 +1,15 @@
 .about-content {
   margin-bottom: 90px;
+  h3 {
+    color: $p-gray;
+  }
 }
 
 .about-first, .about-second {
   display: grid;
   grid-gap: 16px;
   margin-bottom: 90px;
+  color: $dark-gray;
 }
 
 #about-title {
@@ -58,11 +62,11 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .about-first {
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 50% 50%;
     text-align: left;
   }
   .about-second {
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 50% 50%;
     text-align: right;
     margin-right: 1em;
   }
@@ -71,11 +75,11 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .about-first {
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 50% 50%;
     text-align: left;
   }
   .about-second {
-    grid-template-columns: 25% 75%;
+    grid-template-columns: 50% 50%;
     text-align: right;
     margin-right: 1em;
   }

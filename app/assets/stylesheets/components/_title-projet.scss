@@ -1,0 +1,65 @@
+.text-projet {
+  display: inline-block;
+  font-weight: 900;
+  color: #353535;
+  font-size: 2em;
+  line-height: 1.205;
+  text-align: center;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .text-projet {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 1.5em;
+    .text__second{
+      margin-left: 15vmin;
+    }
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .text-projet {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 1.5em;
+    .text__second{
+      margin-left: 15vmin;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .text-projet {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 1.5em;
+    .text__second{
+      margin-left: 15vmin;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .text-projet {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .text-projet {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}

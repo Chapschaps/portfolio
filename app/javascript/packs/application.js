@@ -17,3 +17,4 @@ window.functionDisplay = functionDisplay
 functionColorChange();
 navbarUnderline();
 aosEffect();
+titleEffect();

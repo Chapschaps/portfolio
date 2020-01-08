@@ -5,86 +5,124 @@
   position: relative;
   overflow: hidden;
   width: 70%;
-  color: black;
+  color: white;
   text-align: center;
   font-size: 16px;
-  background-color: #eae9e5;
+  background-color: $background;
   line-height: 1.5em;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-.image-effect *,
-.image-effect *:before,
-.image-effect *:after {
+
+.image-effect * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all 0.25s linear;
-  transition: all 0.25s linear;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
 }
-.image-effect img {
-  width: calc(120%);
-  backface-visibility: hidden;
-  vertical-align: top;
-}
-.image-effect figcaption {
+
+.image-effect:before,
+.image-effect:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 50px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 50px solid rgba(0, 0, 0, 0.5);
   position: absolute;
-  top: 50%;
-  width: 100%;
-  -webkit-transform: translateY(-25%);
-  transform: translateY(-25%);
-  padding: 5px 40px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  z-index: 1;
   opacity: 0;
 }
+
+.image-effect:before {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.image-effect:after {
+  -webkit-transform: scaleY(2);
+  transform: scaleY(2);
+}
+
+.image-effect img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.image-effect figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
 .image-effect h3 {
+  font-size: 2em;
+  font-weight: 500;
+  letter-spacing: 1px;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 700;
 }
-.image-effect p {
-  font-weight: 400;
-  margin: 0;
-  font-size: 0.9em;
+
+.image-effect h3 span {
+  display: block;
+  font-weight: 300;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-transform: none;
+  font-size: 0.5em;
 }
-.image-effect i {
-  position: absolute;
-  color: #fff;
-  font-size: 34.375px;
-  line-height: 55px;
-  width: 55px;
-  bottom: 0;
-  right: 0;
-  background-color: #c0392b;
-  -webkit-transform: translateX(55px);
-  transform: translateX(55px);
-}
+
 .image-effect a {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 3;
 }
-.image-effect:hover img,
-.image-effect.hover img {
-  zoom: 1;
-  filter: alpha(opacity=30);
-  -webkit-opacity: 0.3;
-  opacity: 0.3;
-  -webkit-transform: translateX(-40px);
-  transform: translateX(-40px);
+
+.image-effect:hover > img,
+.image-effect.hover > img {
+  opacity: 0.7;
 }
-.image-effect:hover figcaption,
-.image-effect.hover figcaption {
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+
+.image-effect:hover:before,
+.image-effect.hover:before,
+.image-effect:hover:after,
+.image-effect.hover:after {
+  -webkit-transform: scale(1);
+  transform: scale(1);
   opacity: 1;
 }
-.image-effect:hover i,
-.image-effect.hover i {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+
+.image-effect:hover figcaption,
+.image-effect.hover figcaption {
+  opacity: 1;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
 }
+
+
+
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

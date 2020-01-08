@@ -1,0 +1,53 @@
+.footer {
+  margin-bottom: 1.5em;
+}
+
+.contact-icon-projet {
+  color: $bordeaux;
+  margin-left: 15px;
+  font-size: 2em;
+}
+
+.copyright {
+  font-size: 0.7em;
+  color: $bordeaux;
+  margin-right: 2em;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .footer {
+    text-align: center;
+  }
+  .copyright {
+    font-size: 0.5em;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .footer {
+    text-align: center;
+  }
+}
