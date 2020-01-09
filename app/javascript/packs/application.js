@@ -8,7 +8,7 @@ import { navbarUnderline } from "../components/navbar_underline";
 import { aosEffect } from "../plugins/aos";
 
 
-
+document.getElementById("myplace-first-expanded-image", functionDisplay(document.getElementById("myplace-first-expanded-image"), "myplace-expanded-img"));
 document.getElementById("hplace-first-expanded-image", functionDisplay(document.getElementById("hplace-first-expanded-image"), "hplace-expanded-img"));
 document.getElementById("noa-first-expanded-image", functionDisplay(document.getElementById("noa-first-expanded-image"), "noa-expanded-img"));
 

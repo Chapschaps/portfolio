@@ -1,0 +1,30 @@
+<h2 class="project-name" data-aos="fade-up">Restaurant My Place</h2>
+<figure class="image-effect" data-aos="fade-up">
+  <div class="container-image">
+    <!-- Expanded image -->
+    <img id="myplace-expanded-img" style="width:100%">
+
+    <!-- Image text -->
+    <div id="imgtext" style="display:none;"></div>
+  </div>
+  <figcaption>
+    <h3>Restaurant My Place<span>Site web du restaurant My Place à Puteaux. Une cuisine bonne pour le corps et l’esprit dans une ambiance apaisante et chaleureuse.</span></h3>
+  </figcaption>
+  <i class="fas fa-plus"><a href="http://www.restaurant-my-place.fr/" target="blank"></a></i>
+</figure>
+
+<div class="row columns" data-aos="fade-up">
+  <div class="column">
+    <%= image_tag "myplace1.png", class:"d-block", alt:"My place", id:"myplace-first-expanded-image", onclick:"functionDisplay(this, 'myplace-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "myplace2.png", class:"d-block", alt:"My Place", onclick:"functionDisplay(this, 'myplace-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "myplace3.png", class:"d-block", alt:"My Place", onclick:"functionDisplay(this, 'myplace-expanded-img');" %>
+  </div>
+  <div class="column">
+    <%= image_tag "myplace4.png", class:"d-block", alt:"My Place", onclick:"functionDisplay(this, 'myplace-expanded-img');" %>
+  </div>
+</div>
+

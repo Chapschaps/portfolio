@@ -20,10 +20,50 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 0 auto;
+  width: 50%;
 }
 
 .logo-title {
   display: flex;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+    .all-skills {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .all-skills {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .all-skills {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .all-skills {
+    margin: 0 auto;
+    width: 50%;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .all-skills {
+    margin: 0 auto;
+    width: 50%;
+  }
 }

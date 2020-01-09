@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.projet-title {
+  margin-bottom: 30px;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .text-projet {
@@ -15,7 +19,7 @@
     margin-right: 2.5%;
     font-size: 1.5em;
     .text__second{
-      margin-left: 15vmin;
+      margin-left: 0vmin;
     }
   }
 }
@@ -28,7 +32,7 @@
     margin-right: 2.5%;
     font-size: 1.5em;
     .text__second{
-      margin-left: 15vmin;
+      margin-left: 0vmin;
     }
   }
 }
@@ -41,7 +45,7 @@
     margin-right: 2.5%;
     font-size: 1.5em;
     .text__second{
-      margin-left: 15vmin;
+      margin-left: 0vmin;
     }
   }
 }
@@ -52,6 +56,9 @@
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    .text__second{
+      margin-left: 0vmin;
+    }
   }
 }
 
@@ -61,5 +68,8 @@
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+    .text__second{
+      margin-left: 0vmin;
+    }
   }
 }

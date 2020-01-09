@@ -121,9 +121,6 @@
   transition-delay: 0.1s;
 }
 
-
-
-
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .image-effect {
@@ -150,12 +147,49 @@
   .image-effect {
     width: 70%;
   }
+  .image-effect i {
+    position: absolute;
+    color: #fff;
+    font-size: 34.375px;
+    line-height: 55px;
+    width: 55px;
+    bottom: 11.5%;
+    z-index: 3;
+    right: 0;
+    background-color: $bordeaux;
+    -webkit-transform: translateX(55px);
+    transform: translateX(55px);
+  }
+  .image-effect:hover i,
+  .image-effect.hover i {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .image-effect {
     width: 70%;
+  }
+  .image-effect i {
+    position: absolute;
+    color: #fff;
+    font-size: 34.375px;
+    line-height: 55px;
+    width: 55px;
+    bottom: 11.5%;
+    z-index: 3;
+    right: 0;
+    background-color: $bordeaux;
+    -webkit-transform: translateX(55px);
+    transform: translateX(55px);
+  }
+  .image-effect:hover i,
+  .image-effect.hover i {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
