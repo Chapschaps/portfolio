@@ -5,6 +5,17 @@
   }
 }
 
+.container-infos {
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 30px;
+  margin-bottom: 90px;
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
 .about-first, .about-second {
   display: grid;
   grid-gap: 16px;
