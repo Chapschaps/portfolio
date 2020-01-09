@@ -9,12 +9,12 @@ import { aosEffect } from "../plugins/aos";
 
 
 
-document.getElementById("hplace-first-expanded-image", functionDisplay(document.getElementById("hplace-first-expanded-image"), "hplace-expanded-img"));
-document.getElementById("noa-first-expanded-image", functionDisplay(document.getElementById("noa-first-expanded-image"), "noa-expanded-img"));
+// document.getElementById("hplace-first-expanded-image", functionDisplay(document.getElementById("hplace-first-expanded-image"), "hplace-expanded-img"));
+// document.getElementById("noa-first-expanded-image", functionDisplay(document.getElementById("noa-first-expanded-image"), "noa-expanded-img"));
 
-window.functionDisplay = functionDisplay
+// window.functionDisplay = functionDisplay
 
-functionColorChange();
-navbarUnderline();
+// functionColorChange();
+// navbarUnderline();
 aosEffect();
-titleEffect();
+// titleEffect();

@@ -1,18 +1,21 @@
 #title, #subhead {
   color: $bordeaux;
   font-size: 1em;
+  text-align: center;
 }
 
 #title {
-  margin-top: 40vh;
+  margin-top: 25vh;
 }
 
 .text{
-  display: inline-block;
+//  display: inline-block;
   font-weight: 900;
   color: #353535;
   font-size: 2em;
   line-height: 1.205;
+  text-align: center;
+  margin-top: 10vh;
 }
 
 .text__first, .text__second{
@@ -44,5 +47,5 @@
 }
 
 .text__second{
-  margin-left: 15vmin;
+//  margin-left: 15vmin;
 }
