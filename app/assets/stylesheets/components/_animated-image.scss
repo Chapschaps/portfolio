@@ -126,6 +126,9 @@
   .image-effect {
     width: 95%;
   }
+  .image-effect i {
+    font-size: 0px;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -133,12 +136,18 @@
   .image-effect {
     width: 95%;
   }
+  .image-effect i {
+    font-size: 0px;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .image-effect {
     width: 95%;
+  }
+  .image-effect i {
+    font-size: 0px;
   }
 }
 
