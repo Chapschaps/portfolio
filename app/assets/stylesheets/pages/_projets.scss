@@ -49,8 +49,9 @@
 .project-name {
   text-align: center;
   margin-bottom: 0.5em;
-  color: $bordeaux;
-  font-size: 1.5em;
+  color: $dark-gray;
+  font-size: 1em;
+  font-weight: bold;
 }
 
 // Smallest device
@@ -87,6 +88,9 @@
     margin-left: 15%;
     margin-right: 15%;
   }
+  .project-name {
+    display: none;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -95,5 +99,8 @@
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
+  }
+  .project-name {
+    display: none;
   }
 }
