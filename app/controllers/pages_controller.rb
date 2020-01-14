@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   end
 
   def projets
-    @noaexpandedimg = "noaexpandedimg"
   end
 
   def contact
