@@ -11,3 +11,47 @@ h1, h2 {
   background-color: $background-black;
   height: calc(100vh - 84px);
 }
+
+.footer-home {
+  position: relative;
+}
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+    .footer-home {
+      top: 12vh;
+      left: 50vw;
+    }
+  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .footer-home {
+    top: 10vh;
+    left: 50vw;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .footer-home {
+    top: 25vh;
+    left: 50vw;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .footer-home {
+    top: 20vh;
+    left: 50vw;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .footer-home {
+    top: 20vh;
+    left: 50vw;
+  }
+}

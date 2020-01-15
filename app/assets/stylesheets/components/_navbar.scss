@@ -46,17 +46,51 @@
   }
 }
 
+.icon-navbar {
+  position: relative;
+  // right: 30vw;
+  // right: 30vw;
+}
+
 // pour faire que la navbar change de couleur avec le scroll
-.navbar.scrolled {
+.navbar.scrolled-white {
   background-color: #fff !important;
-  color: black !important;
   transition: background-color 200ms linear;
 }
 
-.navbar.scrolled .navbar-links {
+.navbar.scrolled-white .navbar-links {
   color: $dark-gray;
 }
 
-.navbar.scrolled .navbar-links.active {
+.navbar.scrolled-white .navbar-links.active {
   color: $bordeaux;
 }
+
+// .navbar.scrolled-black {
+//   background-color: $background-black !important;
+//   transition: background-color 200ms linear;
+// }
+
+// .navbar.scrolled-black .navbar-links {
+//   color: $white;
+// }
+
+// .navbar.scrolled-black .navbar-links.active {
+//   color: $bordeaux;
+// }
+
+.navbar.scrolled-display {
+  // display: none;
+  // transition: display 200ms linear;
+  background-color: transparent !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar.scrolled-display .navbar-links {
+  display: none;
+}
+
+.navbar.scrolled-display .navbar-links.active {
+  display: none;
+}
+
