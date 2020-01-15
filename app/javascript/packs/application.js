@@ -6,6 +6,7 @@ import { functionDisplay } from "../components/display_image";
 import { functionColorChange } from "../components/color_change";
 import { navbarUnderline } from "../components/navbar_underline";
 import { backgroundColorChange } from "../components/navbar_background_color";
+import { smoothScroll } from "../components/smooth_scrolling_effect";
 import { aosEffect } from "../plugins/aos";
 
 
@@ -20,3 +21,4 @@ navbarUnderline();
 aosEffect();
 titleEffect();
 backgroundColorChange();
+smoothScroll();
