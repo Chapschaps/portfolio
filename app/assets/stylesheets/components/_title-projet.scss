@@ -1,12 +1,37 @@
 .text-projet {
   display: inline-block;
   font-weight: 900;
-  color: #353535;
+  // color: #353535;
+  color: $white;
   font-size: 2em;
   line-height: 1.205;
   text-align: center;
+  margin-top: 90px;
 }
 
+.projet-texte-description {
+  color: $white;
+  font-size: 1em;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.arrow-icon {
+  color: $white;
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-black-projet {
+  background-color: $background-black;
+  height: calc(100vh - 82px);
+}
+
+.background-white-projet {
+  background-color: $background-white;
+}
 .projet-title {
   margin-bottom: 30px;
 }
@@ -22,6 +47,14 @@
       margin-left: 0vmin;
     }
   }
+  .arrow-icon {
+    margin-top: 15vh;
+  }
+  .projet-texte-description {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -35,6 +68,14 @@
       margin-left: 0vmin;
     }
   }
+  .arrow-icon {
+    margin-top: 15vh;
+  }
+  .projet-texte-description {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -43,10 +84,18 @@
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
-    font-size: 1.5em;
+    font-size: 2.5em;
     .text__second{
       margin-left: 0vmin;
     }
+  }
+  .arrow-icon {
+    margin-top: 25vh;
+  }
+  .projet-texte-description {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
@@ -60,6 +109,14 @@
       margin-left: 0vmin;
     }
   }
+  .arrow-icon {
+    margin-top: 25vh;
+  }
+  .projet-texte-description {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -71,5 +128,10 @@
     .text__second{
       margin-left: 0vmin;
     }
+  }
+  .projet-texte-description {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

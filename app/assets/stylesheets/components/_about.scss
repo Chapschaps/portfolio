@@ -1,31 +1,41 @@
-.about-content {
-  margin-bottom: 90px;
-  h3 {
-    color: $p-gray;
-  }
-}
+// .about-content {
+//   margin-bottom: 90px;
+//   h3 {
+//     color: $p-gray;
+//   }
+// }
 
 .container-infos {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
   margin-top: 30px;
   margin-bottom: 90px;
   h3 {
-    font-size: 1.2em;
+    font-size: 1em;
+    color: $dark-gray;
+    opacity: 0.6;
   }
 }
 
-.about-first, .about-second {
-  display: grid;
-  grid-gap: 16px;
-  margin-bottom: 90px;
+.text-projet-contact {
+  display: inline-block;
+  font-weight: 900;
+  // color: #353535;
   color: $dark-gray;
+  font-size: 2em;
+  line-height: 1.205;
+  text-align: center;
+  margin-top: 32px;
 }
 
-// #about-title {
-//   font-size: 2em;
-// }
+
+.text-contact {
+  font-weight: 900;
+  // color: #353535;
+  color: $dark-gray;
+  // font-size: 2em;
+  line-height: 1.205;
+  text-align: center;
+  margin-top: 10vh;
+}
 
 #second-title {
   font-size: 2em;
@@ -33,65 +43,74 @@
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
-  .about-first {
-    grid-template-columns: 90% 10%;
-    text-align: left;
+  .container-infos {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
-  .about-second {
-    grid-template-columns: 10% 90%;
-    text-align: right;
-    margin-right: 1em;
+  .text-projet-contact {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 1.5em;
+  }
+  .text-contact {
+    font-size: 1.5em;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .about-first {
-    grid-template-columns: 90% 10%;
-    text-align: left;
+  .container-infos {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
-  .about-second {
-    grid-template-columns: 10% 90%;
-    text-align: right;
-    margin-right: 1em;
+  .text-projet-contact {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 1.5em;
+  }
+  .text-contact {
+    font-size: 2.5em;
   }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .about-first {
-    grid-template-columns: 75% 25%;
-    text-align: left;
+  .container-infos {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
-  .about-second {
-    grid-template-columns: 25% 75%;
-    text-align: right;
-    margin-right: 1em;
+  .text-projet-contact {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    font-size: 2.5em;
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .about-first {
-    grid-template-columns: 50% 50%;
-    text-align: left;
+  .container-infos {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
-  .about-second {
-    grid-template-columns: 50% 50%;
-    text-align: right;
-    margin-right: 1em;
+  .text-projet-contact {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .about-first {
-    grid-template-columns: 50% 50%;
-    text-align: left;
-  }
-  .about-second {
-    grid-template-columns: 50% 50%;
-    text-align: right;
-    margin-right: 1em;
+  .container-infos {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }

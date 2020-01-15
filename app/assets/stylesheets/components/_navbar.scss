@@ -1,11 +1,12 @@
 .navbar {
   display: flex;
   justify-content: center;
-  top: 2em;
-  margin-bottom: 90px;
+  padding-top: 2em;
+  background-color: $background-black;
   .navbar-links {
     margin: 0 1em;
-    color: $bordeaux;
+    // color: $bordeaux;
+    color: $white;
     text-decoration: none;
     font-size: 1.2em;
     text-decoration: none;
@@ -13,6 +14,10 @@
     padding: 8px 0px;
     vertical-align: middle;
     letter-spacing: 0.025em;
+  }
+  .navbar-links.active {
+    color: $bordeaux;
+    font-weight: bold;
   }
   .navbar-links.active:after {
     opacity: .6;
@@ -39,4 +44,19 @@
   .navbar-links:focus {
     outline: none;
   }
+}
+
+// pour faire que la navbar change de couleur avec le scroll
+.navbar.scrolled {
+  background-color: #fff !important;
+  color: black !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar.scrolled .navbar-links {
+  color: $dark-gray;
+}
+
+.navbar.scrolled .navbar-links.active {
+  color: $bordeaux;
 }

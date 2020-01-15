@@ -1,8 +1,13 @@
 body {
-  background-color: $background;
+  background-color: $background-white;
   overflow-x: hidden;
 }
 
 h1, h2 {
   width: 100%;
+}
+
+.background-black-home {
+  background-color: $background-black;
+  height: calc(100vh - 84px);
 }

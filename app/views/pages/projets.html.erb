@@ -1,20 +1,56 @@
-<div class="container repeat projet-title">
-  <h1 class="text-projet" id="projet-title">
-    <span class="text__first"><span class="text__word">conception, design, développement </span><span class="text__first-bg"></span></span>
-    <br>
-    <span class="text__second"><span class="text__word">et production de votre site web</span><span class="text__second-bg"></span></span>
-  </h1>
-</div>
-<div class="container">
-  <%= render 'shared/myplace-animated-image' %>
-  <%= render 'shared/hplace-animated-image' %>
-  <%= render 'shared/noa-animated-image' %>
-</div>
-
-<div class="container">
-  <div class="footer">
-    <span class=copyright>© 2020 chaput - tous droits réservés</span>
-    <a href="https://www.linkedin.com/in/leo-chaput", target="blank"><i class="fab fa-linkedin contact-icon-projet photo-link-zoom"></i></a>
-    <a href="mailto:bonjour@leochaput.com"><i class="far fa-envelope contact-icon-projet photo-link-zoom"></i></a>
+<div class="background-black-projet">
+  <div class="container repeat projet-title">
+    <h1 class="text-projet" id="projet-title">
+      <span class="text__first"><span class="text__word">conception, design, développement </span><span class="text__first-bg"></span></span>
+      <br>
+      <span class="text__second"><span class="text__word">et production de votre site web</span><span class="text__second-bg"></span></span>
+    </h1>
+  </div>
+  <div class="container">
+    <h3 class="projet-texte-description">Développeur web fullstack, je réalise des sites web de A à Z, du design, de la conception jusqu’au développement et la mise en production. Je mets mes conseils, mon expérience et mon énergie pour créer un site web qui réponde à vos besoins et vos envies. Voici certains des projets sur lesquelles j'ai travaillés.</h3>
+    <a href="#projet-section"><i class="fas fa-arrow-circle-down arrow-icon"></i></a>
   </div>
 </div>
+<div style="margin-bottom: 90px;"></div>
+<div id="projet-section" class="background-white-projet">
+  <div class="container">
+    <%= render 'shared/myplace-animated-image' %>
+    <%= render 'shared/hplace-animated-image' %>
+    <%= render 'shared/noa-animated-image' %>
+  </div>
+  <div class="container">
+    <div class="footer">
+      <span class=copyright>© 2020 chaput - tous droits réservés</span>
+      <a href="https://www.linkedin.com/in/leo-chaput", target="blank"><i class="fab fa-linkedin contact-icon-projet photo-link-zoom"></i></a>
+      <a href="mailto:bonjour@leochaput.com"><i class="far fa-envelope contact-icon-projet photo-link-zoom"></i></a>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>

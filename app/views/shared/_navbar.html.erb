@@ -1,4 +1,18 @@
-<div class="navbar">
+<div class="navbar sticky-top">
   <%= link_to "Projets", projets_path, class:"navbar-links" %>
   <%= link_to "Contact", contact_path, class:"navbar-links" %>
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $(function () {
+    $(document).scroll(function () {
+      var $nav = $(".navbar");
+      var $navLinks = $(".navbar-links");
+      var $blackBack = $(".background-black-projet");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $blackBack.height());
+      $navLinks.toggleClass('scrolled', $(this).scrollTop() > $blackBack.height());
+
+    });
+  });
+</script>

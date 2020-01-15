@@ -1,18 +1,20 @@
 #title, #subhead {
-  color: $bordeaux;
+  color: $white;
   font-size: 1em;
   text-align: center;
+  opacity: 0.6;
 }
 
 #title {
-  margin-top: 25vh;
+  padding-top: 25vh;
 }
 
 .text{
 //  display: inline-block;
   font-weight: 900;
-  color: #353535;
-  font-size: 2em;
+  // color: #353535;
+  color: $white;
+  // font-size: 2em;
   line-height: 1.205;
   text-align: center;
   margin-top: 10vh;
@@ -49,3 +51,18 @@
 .text__second{
 //  margin-left: 15vmin;
 }
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .text {
+    font-size: 1.5em;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .text {
+    font-size: 2.5em;
+  }
+}
+
