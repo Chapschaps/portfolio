@@ -1,7 +1,8 @@
 const titleEffect = () => {
   if (document.querySelector('.repeat')) {
     window.onload = function(){
-      var tl = new TimelineLite({delay: 1}),
+//      var tl = new TimelineLite({delay: 1}),
+      var tl = new TimelineLite({delay: 0.1}),
         firstBg = document.querySelectorAll('.text__first-bg'),
         secBg = document.querySelectorAll('.text__second-bg'),
         word  = document.querySelectorAll('.text__word');
