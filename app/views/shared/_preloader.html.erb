@@ -29,13 +29,13 @@
 </div>
 
 <script>
-  function noScroll() {
+  var noScrollFunction = function noScroll() {
     window.scrollTo(0, 0);
   }
 
-  var preloader = () => {
-    window.addEventListener('load', () => {
-      window.addEventListener('scroll', noScroll);
+  function preloader() {
+    window.addEventListener('load', function() {
+      window.addEventListener('scroll', noScrollFunction);
       var preload = document.querySelector('.preloader');
       if (document.getElementById('about-title')) {
         preload.style.backgroundColor= "#FAFAFA"
@@ -51,8 +51,8 @@
       // }, 50);
       };
       preload.style.display = "none";
-      window.removeEventListener('scroll', noScroll);
-    });
+      window.removeEventListener('scroll', noScrollFunction);
+    }, false);
   }
 
   preloader();
