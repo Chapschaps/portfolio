@@ -1,0 +1,17 @@
+.preloader {
+  background-color: $background-black;
+  height: calc(100vh - 82px);
+  width: 100vw;
+  overflow: hidden !important;
+  position:relative;
+  z-index: 9999 !important;
+  text-align: center;
+  padding: 35vh;
+}
+
+svg{
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display:inline-block;
+}
