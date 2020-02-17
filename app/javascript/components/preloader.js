@@ -1,4 +1,4 @@
-function noScroll() {
+const noScroll = () => {
   window.scrollTo(0, 0);
 }
 
@@ -6,7 +6,8 @@ const preloader = () => {
   window.addEventListener('load', () => {
     window.addEventListener('scroll', noScroll);
     const preload = document.querySelector('.preloader');
-    if (document.getElementById('about-title')) {
+    const navbar = document.querySelector(".navbar");
+    if (navbar.style.backgroundColor === "white") {
       preload.style.backgroundColor= "#FAFAFA"
     // var op = 1;  // initial opacity
     // var timer = setInterval(function () {
