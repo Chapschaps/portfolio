@@ -1,6 +1,5 @@
 const preloader = () => {
   window.addEventListener('load', () => {
-    document.body.style.overflow = 'hidden';
     const preload = document.querySelector('.preloader');
     const navbar = document.querySelector(".navbar");
     if (navbar.style.backgroundColor === "white") {
@@ -17,7 +16,8 @@ const preloader = () => {
     // }, 50);
     };
     preload.style.display = "none";
-    document.body.style.overflow = '';
+    document.body.style.overflow = 'auto';
+    document.body.style.overflowX = 'hidden';
   });
 }
 

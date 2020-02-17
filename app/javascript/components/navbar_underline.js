@@ -11,6 +11,8 @@ const navbarUnderline = () => {
     const links = document.querySelectorAll(".navbar-links");
     links[1].classList.add("active");
   };
+  document.body.style.overflow = '';
+  document.body.style.overflowX = 'hidden';
 }
 
 
