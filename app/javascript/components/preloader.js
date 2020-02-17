@@ -1,10 +1,6 @@
-const noScroll = () => {
-  window.scrollTo(0, 0);
-}
-
 const preloader = () => {
   window.addEventListener('load', () => {
-    window.addEventListener('scroll', noScroll);
+    document.body.style.overflow = 'hidden';
     const preload = document.querySelector('.preloader');
     const navbar = document.querySelector(".navbar");
     if (navbar.style.backgroundColor === "white") {
@@ -21,7 +17,7 @@ const preloader = () => {
     // }, 50);
     };
     preload.style.display = "none";
-    window.removeEventListener('scroll', noScroll);
+    document.body.style.overflow = '';
   });
 }
 
