@@ -17,6 +17,7 @@ const preloader = () => {
     };
     preload.style.display = "none";
     document.body.style.overflow = 'auto';
+    document.body.style.position = 'relative';
     document.body.style.overflowX = 'hidden';
   });
 }
